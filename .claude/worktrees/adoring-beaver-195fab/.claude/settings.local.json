@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(cp \"/c/Users/chipo/Documents/prithwell/prithwellcode/prithwell/.claude/worktrees/adoring-beaver-195fab/app/page.js\" \"/c/Users/chipo/Documents/prithwell/prithwellcode/prithwell/app/page.js\")",
+      "Bash(cp \"/c/Users/chipo/Documents/prithwell/prithwellcode/prithwell/.claude/worktrees/adoring-beaver-195fab/components/Navbar.js\" \"/c/Users/chipo/Documents/prithwell/prithwellcode/prithwell/components/Navbar.js\")",
+      "Bash(mkdir -p \"/c/Users/chipo/Documents/prithwell/prithwellcode/prithwell/app/about\")",
+      "Bash(cp \"/c/Users/chipo/Documents/prithwell/prithwellcode/prithwell/.claude/worktrees/adoring-beaver-195fab/app/about/page.js\" \"/c/Users/chipo/Documents/prithwell/prithwellcode/prithwell/app/about/page.js\")"
+    ]
+  }
+}

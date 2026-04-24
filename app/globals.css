@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+  --blue:         #2563eb;
+  --blue-dark:    #1e3a8a;
+  --navy:         #0a1628;
+  --gold:         #c9a227;
+  --gold-light:   #f0d97a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  background: #f9fafb;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Mobile-first tap targets */
+button, a { min-height: 44px; }
+
+/* Gold scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+
+@layer components {
+  .btn-primary {
+    @apply font-bold rounded-xl px-6 py-3
+           active:scale-95 transition-all duration-150
+           disabled:opacity-50 disabled:cursor-not-allowed;
+    background: #c9a227;
+    color: #0a1628;
+  }
+  .btn-primary:hover { background: #a87d12; }
+
+  .btn-outline {
+    @apply border-2 font-medium rounded-xl px-6 py-3
+           active:scale-95 transition-all duration-150;
+    border-color: #2563eb;
+    color: #1d4ed8;
+  }
+  .btn-outline:hover { background: #eff6ff; }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100;
+  }
+  .input {
+    @apply w-full border border-gray-300 rounded-xl px-4 py-3 text-sm
+           focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent;
+  }
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+}
